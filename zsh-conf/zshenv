@@ -1,0 +1,3 @@
+#export WINIT_X11_SCALE_FACTOR=1
+export EDITOR=nvim
+ZDOTDIR=~/.config/zsh
