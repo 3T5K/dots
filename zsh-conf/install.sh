@@ -17,8 +17,13 @@ backup() {
 			&& echo "backed up")
 }
 
+log "pinging github"
 ping github.com 1>/dev/null 2>&1 || die "failed to reach github.com (make sure there is a network connection)"
+echo "ok"
+
+log "looking for dependencies"
 command -v git 1>/dev/null 2>&1 || die "missing command 'git'" 
+echo "ok"
 
 backup .zshenv
 backup .config/zsh
