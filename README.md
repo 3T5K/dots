@@ -1,1 +1,1 @@
-- My personal config files.
+- This is a repo with stripped down versions of my configs of programs for quick access in different environments.
