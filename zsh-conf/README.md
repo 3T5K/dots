@@ -30,7 +30,7 @@
 
 - Copy *zshenv* and *zsh* to the places specified above.
 - Then run:
-```sh
+```bash
 git clone https://github.com/MichaelAquilina/zsh-auto-notify.git "$HOME/.config/zsh/plugins/zsh-auto-notify"
 git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.config/zsh/plugins/zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-history-substring-search.git "$HOME/.config/zsh/plugins/zsh-history-substring-search"
