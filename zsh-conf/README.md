@@ -15,6 +15,7 @@
 - Backs up existing config.
 - Doesn't actually install ZSH nor does it set ZSH as a login shell.
 - Downloads all plugins via `git clone`.
+- Doesn't restore backups, nor clean up after failure (yet).
 
 ### zshenv
 
