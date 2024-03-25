@@ -32,7 +32,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 log "installing config"
 cp -v zshenv "$HOME/.zshenv" || printf "failed to copy zshenv -> ~/.zshenv" 1>&2
-cp -rv zsh "$HOME/.config/"  || exit 1
+cp -rv zsh "$HOME/.config/"  || printf "failed to copy zsh -> ~/.config/zsh" 1>&2
+
 
 log "downloading zsh plugins"
 git clone https://github.com/MichaelAquilina/zsh-auto-notify.git "$HOME/.config/zsh/plugins/zsh-auto-notify"
