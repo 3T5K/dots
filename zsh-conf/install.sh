@@ -14,7 +14,7 @@ die() {
 backup() {
 	log "looking for '$1'"
 	[ -e "$HOME/$1" ] &&\
-		(mv -v "$HOME/$1" "$HOME/$1.bak-$(uuidgen))"\
+		(mv -v "$HOME/$1" "$HOME/$1.bak-$(uuidgen)"\
 			|| die "failed to back up '~/$1'... quitting"\
 			&& echo "backed up")
 }
