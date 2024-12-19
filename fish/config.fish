@@ -10,16 +10,10 @@
 #################
 
 if status --is-login
-    # set -x PATH /home/ivan/.config/emacs/bin:/home/ivan/.local/bin:$PATH
     set -x WINIT_X11_SCALE_FACTOR 1
     set -x EDITOR nvim
     set -x QT_QPA_PLATFORMTHEME qt5ct
-    # set -x GTK_THEME 'Catppuccin-Mocha-Standard-Lavender-dark:dark'
-    # set -x GTK_THEME Catppuccin-Mocha-Mauve
-    set -x FREEPLANE_USE_UNSUPPORTED_JAVA_VERSION 1
-    set -x BAP /home/ivan/Documents/books-and-papers/
-    set -x IDW /home/ivan/Downloads/internet-downloads/
-    set -x XDG_CONFIG_HOME /home/ivan/.config
+    set -x XDG_CONFIG_HOME "$HOME/.config"
 end
 
 # Removes the initial greeting
@@ -222,16 +216,8 @@ alias lla='exa -la'
 alias pd='prevd'
 alias nd='nextd'
 alias dcs='cd $HOME/Documents/'
-alias tmp='cd $HOME/Documents/temp/'
-alias msc='cd $HOME/Documents/misc/'
-alias scr='cd $HOME/Documents/projects/scripts/'
-alias lrn='cd $HOME/Documents/learning/'
-alias bap='cd $HOME/Documents/books-and-papers/'
-alias prj='cd $HOME/Documents/projects/'
+alias pcs='cd $HOME/Pictures/'
 alias dwn='cd $HOME/Downloads/'
-alias idw='cd $HOME/Downloads/internet-downloads/'
-alias src='cd $HOME/Downloads/sources/'
-alias mdw='cd $HOME/Downloads/sources/other/'
 alias wps='cd $HOME/Pictures/wallpapers/'
 alias dots='cd $HOME/.config'
 alias wd='cd $WD'
@@ -263,7 +249,6 @@ alias ydl='yt-dlp -x --audio-format best --audio-quality 0'
 alias ywav='yt-dlp -x --audio-format wav'
 alias ins='instaloader --no-videos --no-video-thumbnails --no-captions --no-metadata-json'
 alias smt='objdump -t'
-alias wplasma='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
 alias sxiv='xrdb -merge ~/.Xresources && command sxiv -b'
 alias ns='xrdb -merge ~/.Xresources && command nsxiv -b'
 alias cs='sha256sum'
@@ -275,7 +260,7 @@ alias dbe='distrobox enter'
 #####################
 
 if status --is-interactive
-    pfetch
+    # pfetch
     # screenfetch
     # nitch
 end
