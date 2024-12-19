@@ -1,0 +1,23 @@
+Host dg15
+  HostName 192.168.1.10
+  User ivank
+  Port 22
+  IdentityFile /home/ivan/.ssh/dg15_id_ed25519
+
+Host xrn11
+  HostName 192.168.1.11
+  User u0_a236
+  Port 8022
+  IdentityFile /home/ivan/.ssh/xrn11_id_ed25519
+
+Host gp7p
+  HostName 192.168.1.13
+  User u0_a130
+  Port 8022
+  IdentityFile /home/ivan/.ssh/gp7p_id_ed25519
+
+Host sgta9p
+  HostName 192.168.1.14
+  User u0_a267
+  Port 8022
+  IdentityFile /home/ivan/.ssh/sgta9p_id_ed25519
